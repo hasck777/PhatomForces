@@ -6118,7 +6118,7 @@ LPH_NO_VIRTUALIZE(function() -- Make UI
     cheatSettings:AddToggle("Show Keybind List", false, getCallback("Cheat Settings%%Show Keybind List"))
     cheatSettings:AddToggle("Show Key Name", false, getCallback("Cheat Settings%%Show Key Name"))
     cheatSettings:AddButton("Copy Discord Invite", function()
-        setclipboard("https://discord.gg/tUEJZYvF9d") -- pro
+        setclipboard("https://discord.gg/D9uPakaDP4") -- pro
     end)
     cheatSettings:AddButton("Unload", function()
         unloadMain()
