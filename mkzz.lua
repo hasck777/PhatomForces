@@ -1,4 +1,19 @@
+--[[
 
+
+    
+
+    ~ Index ~
+
+    [ Drawing Library ] - [ Line 47 ]
+    [ UI Library ] - [ Line 1053 ]
+    [ Cham Library ] - [ Line 2646 ]
+    [ Main Cheat ] - [ Line 2702 ]
+    [ Make UI ] - [ Line 5633 ]
+
+  
+ 
+]]
 
 function LPH_NO_VIRTUALIZE(fuction) -- unnecessary now
     return fuction
@@ -6,8 +21,8 @@ end
 LPH_JIT_MAX = LPH_NO_VIRTUALIZE
 
 local devMode = true
-local defaultUIName = "Mkz.Scripts" -- $$$
-local folderName = "Mkz|Phantom Forces Cheat"
+local defaultUIName = "Mkz.Hub" -- $$$
+local folderName = "Phantom Forces Cheat"
 local connectionList = {}
 local callbackList = {}
 local playerStatus = {}
@@ -5724,7 +5739,7 @@ LPH_NO_VIRTUALIZE(function() -- Make UI
     local title
     if isfile(folderName .. "/theme.json") then
         local userThemeData = httpService:JSONDecode(readfile(folderName .. "/theme.json"))
-        title = (userThemeData.Title == "Mkz" and "Mkz.Scripts") or userThemeData.Title
+        title = (userThemeData.Title == "Mkz" and "Mkz.Hub") or userThemeData.Title
         wapus.theme = {
             accent = Color3.fromRGB(table.unpack(userThemeData["Accent Color"])),
             text = Color3.fromRGB(table.unpack(userThemeData["Text Color"])),
@@ -6103,7 +6118,7 @@ LPH_NO_VIRTUALIZE(function() -- Make UI
     cheatSettings:AddToggle("Show Keybind List", false, getCallback("Cheat Settings%%Show Keybind List"))
     cheatSettings:AddToggle("Show Key Name", false, getCallback("Cheat Settings%%Show Key Name"))
     cheatSettings:AddButton("Copy Discord Invite", function()
-        setclipboard("https://discord.gg/D9uPakaDP4") -- pro
+        setclipboard("https://discord.gg/tUEJZYvF9d") -- pro
     end)
     cheatSettings:AddButton("Unload", function()
         unloadMain()
